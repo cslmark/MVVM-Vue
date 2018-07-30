@@ -6,14 +6,39 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" v-model="input">
+    <input type="text" v-model="input" id="input">
     {{text}}
     <p>{{text}}</p>
+    <p id="show"></p>
 </div>
 </body>
 <script>
-    function compile(node, vm){
-        if(node.nodeType === 1){
+
+    function defineProperty(vm, key, val) {
+        Object.defineProperty(vm, key, {
+            get: function () {
+                return val;
+            },
+            set: function (newValue) {
+                document.getElementById("show").innerHTML = newValue;
+                document.getElementById("input").value = newValue;
+                if (newValue === val) {
+                    return;
+                }
+                val = newValue;
+            }
+        });
+    }
+
+    function observe(data, vm) {
+        Object.keys(data).forEach(function (key) {
+            defineProperty(vm, key, data[key]);
+        });
+    }
+
+
+    function compile(node, vm) {
+        if (node.nodeType === 1) {
             var attr = node.attributes;
             for(let i = 0; i<attr.length; i++){
                 if(attr[i].nodeName === 'v-model'){
@@ -49,6 +74,7 @@
     function Vue(options){
         var id = options.el;
         this.data = options.data;
+        observe(this.data, this);//添加view=>model的绑定
         var dom = nodeToFragment(document.getElementById(id), this);
         document.getElementById(id).appendChild(dom);
     }
