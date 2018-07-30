@@ -8,6 +8,7 @@
 <div id="app">
     <input type="text" v-model="input">
     {{text}}
+    <p>{{text}}</p>
 </div>
 </body>
 <script>
@@ -21,7 +22,9 @@
                     node.removeAttribute('v-model');
                 }
             }
-
+            if (child = node.firstChild) {
+                compile(child, vm);
+            }
         }
         if(node.nodeType === 3){
             let reg = /\{\{(.*)\}\}/;

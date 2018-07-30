@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b4670df-6bc3-4890-a967-cf9f7a7a67ea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/model_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/model_view.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="model_view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -124,12 +123,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532866454793</updated>
       <workItem from="1532866456684" duration="1006000" />
-      <workItem from="1532918200397" duration="5556000" />
+      <workItem from="1532918200397" duration="5664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6562000" />
+    <option name="totallyTimeSpent" value="6670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="183" y="25" width="1302" height="838" extended-state="0" />
@@ -203,8 +202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
